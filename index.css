@@ -182,9 +182,17 @@ span{
 
     @media screen and (max-width:800px)
     {
-        .menu{
+        
+        .nav img{
+            display: block;
+        }
+        .nav span {
+            display: block;
+        }
+        .nav ul li{
             display: none;
         }
+
        /* .menu_bar{
             display: block;
             width: 100%;
