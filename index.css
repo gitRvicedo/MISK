@@ -116,7 +116,10 @@ span{
     transition: 0.3s;
     box-shadow: 12px 12px 17px -3px rgba(0,0,0,0.75);
 }*/
-
+.header{
+    height: 100%;
+    width: 100%;
+}
  
   @supports(object-fit: cover){
       .row img{
@@ -182,11 +185,26 @@ span{
 
     @media screen and (max-width:800px)
     {
+        
         .nav {
             display: none;
         }
        
+        .header{
+            height: 100%;
+            width: 100%;
+            }
 
+        .row{
+
+            width: 90%;
+        }
+
+        .row img{
+            height: 200px;
+            width: 200px;
+            
+            }
        /* .menu_bar{
             display: block;
             width: 100%;
