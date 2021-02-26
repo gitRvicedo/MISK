@@ -71,9 +71,8 @@ span{
  background-color:#dd987b;
  border-radius: 20px;
  color: white;
- 
-
 }
+
 /*********************************************************/
 .container{
     margin-top: -60px;
@@ -183,8 +182,10 @@ span{
 
     @media screen and (max-width:800px)
     {
-        
-        .menu_bar{
+        .menu{
+            display: none;
+        }
+       /* .menu_bar{
             display: block;
             width: 100%;
         }
@@ -207,12 +208,12 @@ span{
         .nav img{
             display: none;
            /* float: none;
-            border-bottom: oldlace;*/
+            border-bottom: oldlace;
         }
         .nav span {
             display: none;
            /* padding: 20px;
-            margin-left: 0px;*/
+            margin-left: 0px;
 
         }
         .nav ul li{
@@ -221,4 +222,5 @@ span{
             margin-left: 0px;
 
         }
+        */
     }
