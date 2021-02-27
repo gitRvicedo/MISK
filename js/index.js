@@ -1,45 +1,87 @@
-console.log('vinculado')
+/*console.log('vinculado')
 
-let links = document.querySelectorAll('a')
-let main = document.querySelector('container')
+let links = document.querySelectorAll("a")
+let container = document.getElementById("container")
 
-/*
-links.forEach((link)=>{
-link.addEventListener("click",()=>{
-    let id = link.id;
-    let archivo =  id + ".html"
-    console.log(archivo)
-    let xhr = ajax(archivo)
+$(window).load(function() {
+
+    let pagina = fetch(`html/productos.html`)
+    pagina
+      .then(valor=>{return valor.text()})
+      .then(valor=>{
+        console.log(valor);
+        container.innerHTML = valor;
+    })
+    .catch()
+
+});*/
+
+$(document).ready(function() {
+ 
+  let links = document.querySelectorAll("a");
+  let container = document.getElementById ("container");
+  let xhr = new XMLHttpRequest;
+  
+  links.forEach((link)=>{
    
-    xhr.addEventListener("load",()=>{
+    link.addEventListener("click",function(){
+      let id = link.id;
+      let pagina = id + ".html";
+      let xhr = ajax(pagina)
+        
+      xhr.addEventListener("load",()=>{
             if (xhr.status == 200)
-            {
-                main.innerHTML = xhr.response;
-                
-            }
+              {
+                container.innerHTML = xhr.response;
+              }
+        })
     })
-    })
-})//cierre del for 
-
-//precarga de la pagina de inicio
-let pagina_inicial = ajax("productos.html")
-pagina_inicial.addEventListener("load",()=>{
-    if(pagina_inicial == 200){
-        main.innerHTML = pagina_inicial.response;
-        console.log(xhr.response)
-    }
-})
-
-
-function ajax(url,metodo){
-    let http_metodo = metodo || "GET";
-    let xhr = new XMLHttpRequest
-    xhr.open( http_metodo,url)
+  })
+  
+  /**********************cargo la pagina de inicio */
+  let pagina_inicio = ajax('html/productos.html');
+  pagina_inicio.addEventListener("load",()=>{
+       
+    if (pagina_inicio.status == 200)
+              {
+                container.innerHTML = xhr.response;
+              }
+  })
+  
+  
+  
+function ajax(url){
+    let metodo = "GET";
+    
+    xhr.open(metodo,url);
     xhr.send();
+  
     return xhr;
+  }
 
-}
-*/
+
+
+});
+
+
+
+    
+   
+
+
+
+
+
+
+   
+    
+    
+
+
+   
+
+
+
 
 
 
