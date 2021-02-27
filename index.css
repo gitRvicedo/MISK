@@ -95,8 +95,17 @@ span{
 .descripcionProducto{
     margin-left: 20px;
     display: inline;
+    width: 100%;
 }
+.categoria{
+   /* background-color: rgb(107, 141, 193);*/
+    color:rgb(107, 141, 193);
+    font-size: 30px;
+    padding: 3px;
+    border-radius: 10px;
+    width: 40%;
 
+}
 .descripcion{
     margin-top: 0;
     font-size: 30px;
@@ -222,10 +231,19 @@ span{
         }
 
         .row img{
-            height: 150px;
-            width: 150px;
+            height: 140px;
+            width: 140px;
             }
+        
+        .categoria{
+            background-color: rgb(107, 141, 193);
+            color: white;
+            font-size: 18px;
+            padding: 3px;
+            border-radius: 10px;
+            width: 100%;
 
+        }
         .descripcion{
             margin-top: 0;
             font-size: 18px;
@@ -233,6 +251,7 @@ span{
         .precio{
             font-size: 25px;
         }
+        
        
         .btn-whatsapp {
             display:block;
