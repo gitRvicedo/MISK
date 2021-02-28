@@ -16,35 +16,38 @@ $(window).load(function() {
 
 });*/
 
-$(document).ready(function() {
+$(document).ready(function(){
  
   let links = document.querySelectorAll("a");
-  let container = document.getElementById ("container");
-  let xhr = new XMLHttpRequest;
+  let main = document.getElementById("main")  
+
   
   links.forEach((link)=>{
    
     link.addEventListener("click",function(){
       let id = link.id;
-      let pagina = id + ".html";
-      let xhr = ajax(pagina)
+     //`${url}/users`
+     
+      let url = `html/${id}.html`;
+      
+      let xhr = ajax(url)
         
       xhr.addEventListener("load",()=>{
             if (xhr.status == 200)
               {
-                container.innerHTML = xhr.response;
+                main.innerHTML = xhr.response;
               }
         })
     })
   })
   
   /**********************cargo la pagina de inicio */
-  let pagina_inicio = ajax('html/productos.html');
+  let pagina_inicio = ajax("html/home.html");
   pagina_inicio.addEventListener("load",()=>{
        
     if (pagina_inicio.status == 200)
               {
-                container.innerHTML = xhr.response;
+                main.innerHTML = pagina_inicio.response;
               }
   })
   
@@ -52,7 +55,7 @@ $(document).ready(function() {
   
 function ajax(url){
     let metodo = "GET";
-    
+    let xhr = new XMLHttpRequest;
     xhr.open(metodo,url);
     xhr.send();
   

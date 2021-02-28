@@ -9,10 +9,10 @@ body{
 .nav{
     /*border: 1px solid grey;*/
     width: 100%;
-    height: 100px;
+    height: 110px;
     /*background-color: #fcd1c3;*/
     background-color: #addfd9;
-
+    margin-right: 10px;
 }
 
 h1{
@@ -24,9 +24,7 @@ h1{
     width: 100%;
     height: 400px;
     text-align: center;
-    margin-top: -30px;
-    /*border: 1px solid red;*/
-   
+    
 }
 p{
     font-size: 23px;
@@ -39,6 +37,7 @@ span{
     bottom: 30px;
     position: relative;
     margin-left: 30px;
+
     
 }
 
@@ -46,6 +45,7 @@ span a{
     text-decoration: none;
     font-size: 48px;
     margin-left: -20px;
+    color: #ad79cf;
 }
 
 .imgLogo{
@@ -201,9 +201,9 @@ height: 250px;
     }
 
     .footer{
-        background-color: #f2f2f2;
+        background-color: #f1cdcd;
         width: 100%;
-        height: 50px;
+       
         text-align: center;
     }
     .ico{
@@ -213,52 +213,41 @@ height: 250px;
     }
         
      /**********************************************/
-    html{
-        height: 100%;
-    }
+     /**********************************************/
+     /**********************************************/
+     /**********************************************/
+     /**********************************************/  
     
-    .nav{
-        grid-area: nav;
-    }
 
-    .header{
-        grid-area: header;
-    }
-
-    .container{
-        grid-area: container;
-    }
-
-    .footer{
-        grid-area: footer;
-    }
-
-    .grid-container{
-        display: grid;
-        gap: 30px;
-        grid-template-areas: 
-        "nav"
-        "header"
-        "container"
-        "footer";
-    }
-
-    
 
     @media screen and (max-width:800px)
     {
-        
-        .nav{
-            display: none;
+        .menu{
+           
+            margin-top: -25px;
+            margin-left: 10px;
+            float:left;
+            padding: 20px;
+            
+            text-align: center;
+            width: 85%;
         }
-       
-        .header{
-            width: 100%;
-            height: 250px;
-            }
+        .menu li a{
+            margin-top: 0px;
+            font-size: 25px;
+            padding: 10px;
+           
+            
+            justify-content:center 
+        }
         
-            .imgHeader{
-            height: 100%;
+        .header{
+        width: 100%;
+        height: 250px;
+        }
+        
+        .imgHeader{
+          height: 100%;
             width: 100%;
             }
         
@@ -295,6 +284,12 @@ height: 250px;
         }
         .precio{
             font-size: 25px;
+            width: 10px;
+        }
+
+        .footer{
+         
+          margin-top: 10px;
         }
 
 /*-------- CONTACTO----------*/
