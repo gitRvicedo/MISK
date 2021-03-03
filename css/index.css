@@ -252,12 +252,12 @@ height: 250px;
     {
           
         .menu{
-            margin-top: -25px;
-            margin-left: 10px;
-            float:left;
+           
+            margin-right: 5px;
+            float:right;
             padding: 20px;
             text-align: center;
-            width: 85%;
+            width: 100%;
         }
         .menu li a{
             margin-top: 0px;
@@ -311,7 +311,7 @@ height: 250px;
     position: absolute;
   /*  background:#addfd9 ;*/
   background-color: white;
-  top: 161px;
+  top: 200px;
   
 }
 
