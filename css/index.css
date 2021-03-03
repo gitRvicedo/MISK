@@ -252,12 +252,12 @@ height: 250px;
     {
           
         .menu{
-           
-            margin-right: 5px;
+            
+            margin-right: 20px;
             float:right;
             padding: 20px;
             text-align: center;
-            width: 100%;
+            width: 90%;
         }
         .menu li a{
             margin-top: 0px;
