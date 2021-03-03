@@ -59,8 +59,8 @@ span a{
 .menu{
     margin-top: 11px;
     float: right;
-    font-size: 25px;
-    margin-right: 60px;
+    font-size: 23px;
+    margin-right: 70px;
 }
 .menu li{
     display: inline-block;
@@ -93,6 +93,7 @@ span a{
   /*  background:#addfd9 ;*/
   background-color: #addfd9;
   top:82px;
+  font-size: 18px;
   
 }
 
@@ -252,8 +253,8 @@ height: 250px;
     {
           
         .menu{
-            
-            margin-right: 20px;
+            margin: auto;
+           /* margin-right: 20px;*/
             float:right;
             padding: 20px;
             text-align: center;
@@ -273,7 +274,7 @@ height: 250px;
     position: absolute;
   
   background-color: white;
-  top: 200px;
+  top: 180px;
   
 }
 
@@ -283,7 +284,6 @@ height: 250px;
     margin: 30px;
     margin-left: -20px;
     border-bottom: 1px solid #addfd9;
-   
     
 }
         
