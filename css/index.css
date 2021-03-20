@@ -296,11 +296,10 @@ object-fit: cover;
 .menu li:hover ul{
     margin-top: -35px;  
     display:block;
-    margin-left: 160px;
+    margin-left: 140px;
     position: absolute;
     background-color: #addfd9;
    
-  
 }
 
 .menu li ul > li{
