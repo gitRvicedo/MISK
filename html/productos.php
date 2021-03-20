@@ -10,7 +10,7 @@
 </div>
 <div class="row">
     <div class="imgProducto">
-        <img src="img/productos/SACALECHE_MANUAL.jpg" alt="">
+        <img src="../img/productos/CHICCO/NURSING/LACTANCIA/CASCOS_RECOGELECHE.jpg" alt="">
     </div>
     <div class="descripcionProducto">
         <div class="categoria">LACTANCIA</div>
@@ -95,3 +95,5 @@
         <div class="precio">$1200</div>
     </div>
 </div>
+
+

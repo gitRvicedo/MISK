@@ -28,7 +28,7 @@ $(document).ready(function(){
       let id = link.id;
      //`${url}/users`
      
-      let url = `html/${id}.html`;
+      let url = `html/${id}.php`;
       
       let xhr = ajax(url)
         
@@ -42,7 +42,7 @@ $(document).ready(function(){
   })
   
   /**********************cargo la pagina de inicio */
-  let pagina_inicio = ajax("html/home.html");
+  let pagina_inicio = ajax("html/home.php");
   pagina_inicio.addEventListener("load",()=>{
        
     if (pagina_inicio.status == 200)
