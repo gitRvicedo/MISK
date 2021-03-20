@@ -294,9 +294,9 @@ object-fit: cover;
 
 
 .menu li:hover ul{
-    margin-top: -35px;  
+    margin-top: 0px;  
     display:block;
-    margin-left: 140px;
+   /* margin-left: 100px;*/
     position: absolute;
     background-color: #addfd9;
    
