@@ -268,20 +268,19 @@ object-fit: cover;
 
 .menu{
     margin-top: 0;
-    width: 30%;
+    padding: 20px;
+    width: 40%;
     height: 250%;
     background-color: #addfd9;
     float: left;
    
+    
 }
 
 .menu li {
-    display: block;
     padding: 10px;
+    display: block;
     font-size: 20px;
-    margin-left: -40px;
-    /*border: 1px solid blue;*/
-    
 }
 
 
@@ -293,12 +292,16 @@ object-fit: cover;
 
 
 
-.menu li:hover ul{
-    margin-top: 0px;  
+.menu li:hover > ul{
+    margin-top: 12px;  
     display:block;
+    margin-left: 20px;
    /* margin-left: 100px;*/
-    position: absolute;
+   /* position: absolute;*/
     background-color: #addfd9;
+    border: 1px solid #097379;
+   
+   
    
 }
 
@@ -307,12 +310,16 @@ object-fit: cover;
     background-color: #addfd9;
     margin-left: -20px;
     border-bottom: 1px solid #ad79cf;
+   
+   
 }
+
 
 .menu li ul > li a:hover{
  background-color:#dd987b;
  border-radius: 20px;
  color: white;
+
 }
 
 /*----SUBMENU SUBMENU ----*/
@@ -322,10 +329,10 @@ object-fit: cover;
 }
 
 .menu li ul li:hover ul {
-    margin-left: 100px;
-    margin-top: -45px;
-    border: 1px solid #097379 ;
-    border-radius: 18px;
+    margin-left: 80px;
+    margin-top: 0px;
+    border-radius: 12px;
+    
 }
 
 
@@ -333,6 +340,8 @@ object-fit: cover;
     display:block;
     border-bottom: 1px solid #ad79cf;
     font-size: 20px;
+    
+    
 }
 
 
