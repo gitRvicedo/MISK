@@ -18,6 +18,17 @@ h1{
     font-size: 40px;
 }
 
+.info{
+    padding: 10px;
+    display: inline;
+    width: 100%;
+    font-size: 20px;
+    color: rgb(63, 56, 56);
+    align-items: center;
+    border: 1px solid #addfd9;
+    border-radius: 12px;
+    text-align: center;
+}
 
 .imgHeader{
     display:flex;
@@ -173,7 +184,7 @@ background-color:#dd987b;
 
 
 .row img{
-   border: 1px solid rgb(226, 222, 222);
+   border: 1px solid rgb(199, 194, 194);
     border-radius: 10px;
     padding: 2px;
 }
@@ -242,13 +253,14 @@ height: 250px;
 @supports(object-fit: cover){
     
 .imgHeader{
-height: 40%;
-width: 40%;
+height: 50%;
+width: 50%;
+margin: auto;
 }
 
 .row img{
-height: 250px;
-width: 250px;
+height: 240px;
+width: 240px;
 object-fit: cover;
 }
 
@@ -290,11 +302,6 @@ object-fit: cover;
     border: 1px solid #097379;
     border-radius: 14px;
     font-size: 20px;
-   
-}
-
-.menu li ul {
-   
 }
 
 .menu li ul li{
