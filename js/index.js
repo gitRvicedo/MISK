@@ -42,7 +42,7 @@ $(document).ready(function(){
   })
   
   /**********************cargo la pagina de inicio */
-  let pagina_inicio = ajax("html/home.html");
+  let pagina_inicio = ajax("html/Destacados.html");
   pagina_inicio.addEventListener("load",()=>{
        
     if (pagina_inicio.status == 200)

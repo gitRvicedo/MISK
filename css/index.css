@@ -266,41 +266,43 @@ object-fit: cover;
 @media screen and (max-width:800px)
 {
 
-
+.menu{
+    margin: 10px;
+    width: 81%;
+    float: left;
+    text-align: center;
+}
 .menu  li {
     padding: 10px;
     display: block;
-    font-size: 25px;
+    font-size: 28px;
     border-bottom: 1px solid #097379;
     margin: auto;
+    
 }
-
 
 /*---SUBMENU ------*/
 
-.menu > li > ul {
-    display: none;
-}
-
-
 .menu li:hover > ul{
-    margin-top: 12px;  
+    width: 70%;
     display:block;
-    margin-left: 20px;
-   /* margin-left: 100px;*/
-   /* position: absolute;*/
     background-color: #addfd9;
     border: 1px solid #097379;
     border-radius: 14px;
+    font-size: 20px;
+   
 }
 
-.menu li ul > li{
+.menu li ul {
+   
+}
+
+.menu li ul li{
     display:block;
     background-color: #addfd9;
-    margin-left: -20px;
     border-bottom: 1px solid #ad79cf;
-   
-   
+    font-size: 20px;
+    
 }
 
 
@@ -308,17 +310,14 @@ object-fit: cover;
  background-color:#dd987b;
  border-radius: 20px;
  color: white;
+ font-size: 20px;
 
 }
 
 /*----SUBMENU SUBMENU ----*/
 
-.menu li ul li ul li {
-    display: none;
-}
-
 .menu li ul li:hover ul {
-    margin-left: 80px;
+   
     margin-top: 0px;
     border-radius: 12px;
     
@@ -329,8 +328,6 @@ object-fit: cover;
     display:block;
     border-bottom: 1px solid #ad79cf;
     font-size: 20px;
-    
-    
 }
 
 
