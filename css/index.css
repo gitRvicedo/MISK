@@ -316,18 +316,21 @@ object-fit: cover;
 
 /*----SUBMENU SUBMENU ----*/
 
+
 .menu li ul li:hover ul {
-   
-    margin-top: 0px;
+    margin-top: 10px;
     border-radius: 12px;
+    width: 30%;
     
 }
 
 
 .menu li ul li:hover ul li {
     display:block;
-    border-bottom: 1px solid #ad79cf;
+    margin-top: 20px;
+    border-bottom: 1px solid #097379;
     font-size: 20px;
+    
 }
 
 
