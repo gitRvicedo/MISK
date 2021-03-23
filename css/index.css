@@ -268,7 +268,7 @@ object-fit: cover;
 
 .menu{
     margin: 10px;
-    width: 81%;
+    width: 75%;
     float: left;
     text-align: center;
 }
@@ -300,7 +300,7 @@ object-fit: cover;
 .menu li ul li{
     display:block;
     background-color: #addfd9;
-    border-bottom: 1px solid #ad79cf;
+    border-bottom: 1px solid #097379;
     font-size: 20px;
     
 }
