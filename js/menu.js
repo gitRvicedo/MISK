@@ -1,4 +1,4 @@
-$(document).ready(main);
+$(document).ready();
 
 var cont = 1;
 function main(){

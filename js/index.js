@@ -41,7 +41,7 @@ $(document).ready(function(){
     })
   })
   
-  /**********************cargo la pagina de inicio */
+  /*cargo la pagina de inicio */
   let pagina_inicio = ajax("html/Destacados.html");
   pagina_inicio.addEventListener("load",()=>{
        

@@ -72,7 +72,7 @@ span a{
 .menu{
     margin-top: 40px;
     float: right;
-    font-size: 25px;
+    font-size: 22px;
     margin-right: 150px;
 }
 
@@ -230,17 +230,17 @@ height: 250px;
     right:18px;
     bottom:160px;
     }
-.btn-correo {
+/*.btn-correo {
     width:60px;
     height:60px;
     right:12px;
     bottom:82px;
-    }    
+    } */   
 .btn-facebook {
     width:40px;
     height:40px;
     right:32px;
-    bottom:28px;
+    bottom:82px;
   }
 
   .btn-whatsapp:hover,.btn-facebook:hover, .btn-correo:hover {
@@ -310,7 +310,6 @@ object-fit: cover;
     background-color: #addfd9;
     border-bottom: 1px solid #097379;
     font-size: 20px;
-    
 }
 
 
@@ -319,7 +318,6 @@ object-fit: cover;
  border-radius: 20px;
  color: white;
  font-size: 20px;
-
 }
 
 /*----SUBMENU SUBMENU ----*/
@@ -329,7 +327,6 @@ object-fit: cover;
     margin-top: 10px;
     border-radius: 12px;
     width: 30%;
-    
 }
 
 
@@ -481,17 +478,17 @@ z-index: 9999;
     right:18px;
     bottom:160px;
     }
-.btn-correo {
+/*.btn-correo {
     width:60px;
     height:60px;
     right:12px;
     bottom:82px;
-    }    
+    }    */
 .btn-facebook {
     width:40px;
     height:40px;
-    right:32px;
-    bottom:28px;
+    right:32px; /*32*/
+    bottom:82px;/*28*/
   }
 
   .btn-whatsapp:hover,.btn-facebook:hover, .btn-correo:hover {
