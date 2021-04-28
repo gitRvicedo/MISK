@@ -1,16 +1,41 @@
+:root {
+  --clr-1: #addfd9;
+  --clr-2: #3f3838;
+  --clr-3: #097379;
+  --clr-4: #dd987b;
+  --clr-5: #ad79cf;
+  --clr-6: #b8b3b3;
+  --clr-7: #c7c2c2;
+  --clr-8: #00adb5;
+  --clr-9: #cfcdcd;
+  --clr-10: #808080;
+  --clr-white: #ffffff;
+}
+
+html {
+  box-sizing: border-box;
+  /* font-size: 48px; */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body{
-   padding: 0;
+   /* padding: 0; */
    margin: 0;
    /*font-family: 'Roboto Mono', monospace;*/
    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .nav{
-    /*border: 1px solid grey;*/
+    /*border: 1px solid var(--clr-10);*/
     width: 100%;
     height: 110px;
     /*background-color: #fcd1c3;*/
-    background-color: #addfd9;
+    background-color: var(--clr-1);
  }
 
 h1{
@@ -23,9 +48,9 @@ h1{
     display: inline;
     width: 100%;
     font-size: 20px;
-    color: rgb(63, 56, 56);
+    color: var(--clr-2);
     align-items: center;
-    border: 1px solid #addfd9;
+    border: 1px solid var(--clr-1);
     border-radius: 12px;
     text-align: center;
 }
@@ -51,7 +76,7 @@ span a{
     text-decoration: none;
     font-size: 48px;
     margin-left: -20px;
-    color:#097379;
+    color:var(--clr-3);
 }
 
 .flecha{
@@ -86,15 +111,15 @@ span a{
 
 .menu a{
     text-decoration: none;
-    color: #097379;
+    color: var(--clr-3);
     padding: 10px;
 }
 
 .menu a:hover{
- background-color:#dd987b;
+ background-color: var(--clr-4);
  border-radius: 10px;
- color: white;
- 
+ color: var(--clr-white);
+
 }
 
 /*---SUBMENU ------*/
@@ -108,22 +133,22 @@ span a{
     display:block;
     float: left;
     position: absolute;
-    background-color: #addfd9;
-  
+    background-color: var(--clr-1);
+
 }
 
 .menu li ul > li{
     display:block;
-    background-color: #addfd9;
+    background-color: var(--clr-1);
     margin: 30px;
     margin-left: -20px;
-    border-bottom: 1px solid #ad79cf;
+    border-bottom: 1px solid var(--clr-5);
 }
 
 .menu li ul > li a:hover{
-background-color:#dd987b;
+background-color:var(--clr-4);
  border-radius: 20px;
- color: white;
+ color: var(--clr-white);
 }
 /*----SUBMENU SUBMENU ----*/
 
@@ -134,14 +159,14 @@ background-color:#dd987b;
 .menu li ul li:hover ul {
     margin-left: 80px;
     margin-top: -45px;
-    border: 1px solid #097379 ;
+    border: 1px solid var(--clr-3) ;
     border-radius: 18px;
 }
 
 
 .menu li ul li:hover ul li {
     display:block;
-    border-bottom: 1px solid #ad79cf;
+    border-bottom: 1px solid var(--clr-5);
     font-size: 20px;
 }
 
@@ -162,7 +187,7 @@ background-color:#dd987b;
     margin: 10px;
    /* border: 1px solid rgb(219, 216, 216);*/
    /*  border-radius: 10px;*/
-   border-bottom: 1px solid rgb(184, 179, 179);
+   border-bottom: 1px solid var(--clr-6);
  }
 
 
@@ -184,7 +209,7 @@ background-color:#dd987b;
 
 
 .row img{
-   border: 1px solid rgb(199, 194, 194);
+   border: 1px solid var(--clr-7);
     border-radius: 10px;
     padding: 2px;
 }
@@ -207,8 +232,8 @@ height: 250px;
     bottom: 0;
     width: 100%;
     height: 80px;
-    color:#00adb5;
-    border-top: 1px solid grey;
+    color:var(--clr-8);
+    border-top: 1px solid var(--clr-10);
     text-align: center;
     align-items: center;
     z-index: 9999;
@@ -223,7 +248,7 @@ height: 250px;
     line-height:80px;
     text-align:center;
     z-index:999;
-}     
+}
 .btn-whatsapp {
     width:60px;
     height:60px;
@@ -235,7 +260,7 @@ height: 250px;
     height:60px;
     right:12px;
     bottom:82px;
-    } */   
+    } */
 .btn-facebook {
     width:40px;
     height:40px;
@@ -246,13 +271,13 @@ height: 250px;
   .btn-whatsapp:hover,.btn-facebook:hover, .btn-correo:hover {
     transform: scale(1.1);
     transition: 0.3s;
-    box-shadow: 12px 12px 17px -3px rgba(105, 100, 100, 0.75);  
+    box-shadow: 12px 12px 17px -3px rgba(105, 100, 100, 0.75);
   }
-/****************************************************************/   
+/****************************************************************/
 /****************************************************************/
 /* me acomoda las imagenes de la pagina*/
 @supports(object-fit: cover){
-    
+
 .imgHeader{
 height: 50%;
 width: 50%;
@@ -266,7 +291,7 @@ object-fit: cover;
 }
 
 
-}     
+}
 /*---------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
@@ -274,7 +299,7 @@ object-fit: cover;
 /*---------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
-     
+
 
 @media screen and (max-width:800px)
 {
@@ -289,9 +314,9 @@ object-fit: cover;
     padding: 10px;
     display: block;
     font-size: 28px;
-    border-bottom: 1px solid #097379;
+    border-bottom: 1px solid var(--clr-3);
     margin: auto;
-    
+
 }
 
 /*---SUBMENU ------*/
@@ -299,24 +324,24 @@ object-fit: cover;
 .menu li:hover > ul{
     width: 70%;
     display:block;
-    background-color: #addfd9;
-    border: 1px solid #097379;
+    background-color: var(--clr-1);
+    border: 1px solid var(--clr-3);
     border-radius: 14px;
     font-size: 20px;
 }
 
 .menu li ul li{
     display:block;
-    background-color: #addfd9;
-    border-bottom: 1px solid #097379;
+    background-color: var(--clr-1);
+    border-bottom: 1px solid var(--clr-3);
     font-size: 20px;
 }
 
 
 .menu li ul > li a:hover{
- background-color:#dd987b;
+ background-color:var(--clr-4);
  border-radius: 20px;
- color: white;
+ color: var(--clr-white);
  font-size: 20px;
 }
 
@@ -333,9 +358,9 @@ object-fit: cover;
 .menu li ul li:hover ul li {
     display:block;
     margin-top: 20px;
-    border-bottom: 1px solid #097379;
+    border-bottom: 1px solid var(--clr-3);
     font-size: 20px;
-    
+
 }
 
 
@@ -344,8 +369,8 @@ object-fit: cover;
 .menu_bar{
     display: block;
     width: 100%;
-    background-color: #097379;
-    
+    background-color: var(--clr-3);
+
 }
 
 
@@ -353,9 +378,9 @@ object-fit: cover;
     margin: -2px;
     display: block;
     padding: 20px;
-    background-color: #097379;
+    background-color: var(--clr-3);
     text-decoration: none;
-    color: white;
+    color: var(--clr-white);
     font-weight: bold;
     font-size: 25px;
     box-sizing: border-box;
@@ -369,8 +394,8 @@ object-fit: cover;
     padding: 15px;
     text-align: center;
     width: 97%;
-    border: 1px solid #00adb5;
-    
+    border: 1px solid var(--clr-8);
+
 }
 
 .menu li a{
@@ -378,7 +403,7 @@ object-fit: cover;
     font-size: 25px;
     padding: 5px;
     justify-content:center;
-    
+
 }
 
 /*--- menu desplegable------------------------------------------*/
@@ -387,25 +412,25 @@ object-fit: cover;
     display:block;
     float: left;
     position: absolute;
-    background-color: white;
+    background-color: var(--clr-white);
     top: 180px;
-  
+
 }
 
 .menu li ul > li{
     display:block;
-    background-color: white;
+    background-color: var(--clr-white);
     margin: 30px;
     margin-left: -20px;
-    border-bottom: 1px solid #addfd9;
-    
+    border-bottom: 1px solid var(--clr-1);
+
 }
- 
+
 */
 .imgHeader{
 display: none;
 }
-    
+
 /*.imgHeader{
 margin-top: 5px;
 margin-left: 1px;
@@ -414,34 +439,34 @@ width: 90%;
 }*/
 
 .footer {
-    
+
 display:none;   /*flex;*/
 /*justify-content: center;
 position: absolute;
 bottom: 0;
 width: 100%;
 height: 20px;
-color:#00adb5;
-border-top: 1px solid grey;
+color:var(--clr-8);
+border-top: 1px solid var(--clr-10);
 text-align: center;
 align-items: center;
 z-index: 9999;
 */
 
 }
-     
-        
-        
 
 
-/*---- MUESTRO LOS PRODUCTOS -----*/     
+
+
+
+/*---- MUESTRO LOS PRODUCTOS -----*/
 .row{
     margin: 10px 0px 0px 10px;
     width: 83%;
     height: 150px;
-    border: 1px solid rgb(207, 205, 205);
+    border: 1px solid var(--clr-9);
     border-radius: 8px;
-    
+
 }
 
 .row img{
@@ -450,13 +475,13 @@ z-index: 9999;
     }
 
 .descripcionProducto{
-    
+
     margin-left: 20px;
     display: inline;
     width: 100%;
     font-size: 15px;
 }
-    
+
 .precio{
     font-size: 25px;
     width: 20px;
@@ -471,7 +496,7 @@ z-index: 9999;
     line-height:80px;
     text-align:center;
     z-index:999;
-}     
+}
 .btn-whatsapp {
     width:60px;
     height:60px;
@@ -494,7 +519,7 @@ z-index: 9999;
   .btn-whatsapp:hover,.btn-facebook:hover, .btn-correo:hover {
     transform: scale(1.1);
     transition: 0.3s;
-    box-shadow: 12px 12px 17px -3px rgba(150, 145, 145, 0.75);  
+    box-shadow: 12px 12px 17px -3px rgba(150, 145, 145, 0.75);
   }
 
 
