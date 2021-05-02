@@ -1,44 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
-   padding: 0;
-   margin: 0;
-   /*font-family: 'Roboto Mono', monospace;*/
    font-family: 'Roboto Condensed', sans-serif;
 }
 
-.nav{
-    /*border: 1px solid grey;*/
+header{
+    display: flex;
     width: 100%;
-    height: 110px;
-    /*background-color: #fcd1c3;*/
     background-color: #addfd9;
- }
-
-h1{
-    margin-top: 1px;
-    font-size: 40px;
 }
 
-.info{
-    padding: 10px;
-    display: inline;
-    width: 100%;
-    font-size: 20px;
-    color: rgb(63, 56, 56);
+header nav{
+    display: flex;
+    z-index: 1000;
+    margin:0px 0px 0px 100px;
     align-items: center;
-    border: 1px solid #addfd9;
-    border-radius: 12px;
-    text-align: center;
 }
+
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    position: relative;
+}
+
+header nav ul li:hover{
+   background:#b5f3ec;
+}
+
+header nav ul li a{
+    color:#097379;
+    display: block;
+    text-decoration: none;
+    padding: 14px;
+}
+
+
+header nav ul li:hover .children {
+    display: block;
+    
+}
+
+
+header nav ul li .children {
+    display: none;
+    position: absolute;
+    background-color: #addfd9;
+    z-index: 1000;
+}
+
+header nav ul li .children li{
+    width: 200px;
+    display: block;
+    overflow: hidden;
+    /*border-bottom: 1px solid #097379;*/
+}
+
+header nav ul li .children li a {
+    display: block;
+}
+
+header nav ul li .children li a:hover {
+    background-color:#b5f3ec;
+}
+
+
+.menu_bar{
+    display: none;
+}
+
+.content-imgHeader {
+	margin:0 auto;
+	text-align:center;
+}
+ 
 
 .imgHeader{
-    display:flex;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    margin-left: 400px;
+    height: 50%;
+    width: 50%;
+    /*border: 2px solid rgb(143, 143, 226);*/
+    vertical-align:middle;
     }
 
-span{
+span{ /*lo uso para el nombre en la barra demenu*/
+    top:10px;
     font-size: 30px;
     text-align: left;
     align-items: center;
@@ -54,100 +106,18 @@ span a{
     color:#097379;
 }
 
-.flecha{
-    width: 20px;
-    height: 20px;
-    align-items: baseline;
-}
+
 .imgLogo{
+   
     padding: 10px;
     height: 80px;
     width: 80px;
-    background-repeat: no-repeat;
-    background-position: 50%;
     border-radius: 45%;
     background-size: 100% auto;
+    
 }
 /*- MENU --------------------------------------------------------------------------------------*/
-.menu{
-    margin-top: 40px;
-    float: right;
-    font-size: 22px;
-    margin-right: 150px;
-}
-
-.menu_bar{
-    display: none;
-}
-
-.menu li{
-    display: inline-block;
-}
-
-.menu a{
-    text-decoration: none;
-    color: #097379;
-    padding: 10px;
-}
-
-.menu a:hover{
- background-color:#dd987b;
- border-radius: 10px;
- color: white;
- 
-}
-
-/*---SUBMENU ------*/
-
-.menu li ul {
-    display: none;
-}
-
-.menu li:hover ul{
-    margin-top: 11px;
-    display:block;
-    float: left;
-    position: absolute;
-    background-color: #addfd9;
-  
-}
-
-.menu li ul > li{
-    display:block;
-    background-color: #addfd9;
-    margin: 30px;
-    margin-left: -20px;
-    border-bottom: 1px solid #ad79cf;
-}
-
-.menu li ul > li a:hover{
-background-color:#dd987b;
- border-radius: 20px;
- color: white;
-}
-/*----SUBMENU SUBMENU ----*/
-
-.menu li ul li ul li {
-    display: none;
-}
-
-.menu li ul li:hover ul {
-    margin-left: 80px;
-    margin-top: -45px;
-    border: 1px solid #097379 ;
-    border-radius: 18px;
-}
-
-
-.menu li ul li:hover ul li {
-    display:block;
-    border-bottom: 1px solid #ad79cf;
-    font-size: 20px;
-}
-
-
-
-/********************************************************/
+/*-esto es el div de los productos*/
 .container{
     margin-top: -60px;
     width: 100%;
@@ -158,11 +128,9 @@ background-color:#dd987b;
     display: flex;
     padding: 20px;
     height: 250px;
-    width: 95%;
-    margin: 10px;
-   /* border: 1px solid rgb(219, 216, 216);*/
-   /*  border-radius: 10px;*/
-   border-bottom: 1px solid rgb(184, 179, 179);
+    width: 98%;
+    /*margin: 10px;*/
+    border-bottom: 1px solid rgb(184, 179, 179);
  }
 
 
@@ -171,7 +139,8 @@ background-color:#dd987b;
     margin-left: 20px;
     display: inline;
     width: 100%;
-    font-size: 25px;
+    font-size: 20px;
+    
 }
 
 .categoria,.EAN, .descripcion ,.precio{
@@ -179,12 +148,15 @@ background-color:#dd987b;
 }
 
 .precio{
-    font-size: 30px;
+    font-size: 23px;
 }
 
 
 .row img{
-   border: 1px solid rgb(199, 194, 194);
+    height: 200px;
+    width: 200px;
+    /*object-fit: cover;*/
+    border: 1px solid rgb(199, 194, 194);
     border-radius: 10px;
     padding: 2px;
 }
@@ -195,20 +167,17 @@ background-color:#dd987b;
     box-shadow: 12px 12px 17px -3px rgba(196, 191, 191, 0.75);
 }
 
-.header{
-height: 250px;
-
-}
 
 .footer {
     display: flex;
     justify-content: center;
+    margin-top: 10px;
     /*position: absolute;*/
     bottom: 0;
     width: 100%;
     height: 80px;
     color:#00adb5;
-    border-top: 1px solid grey;
+    /*border-top: 1px solid grey;*/
     text-align: center;
     align-items: center;
     z-index: 9999;
@@ -248,25 +217,7 @@ height: 250px;
     transition: 0.3s;
     box-shadow: 12px 12px 17px -3px rgba(105, 100, 100, 0.75);  
   }
-/****************************************************************/   
-/****************************************************************/
-/* me acomoda las imagenes de la pagina*/
-@supports(object-fit: cover){
-    
-.imgHeader{
-height: 50%;
-width: 50%;
-margin: auto;
-}
 
-.row img{
-height: 240px;
-width: 240px;
-object-fit: cover;
-}
-
-
-}     
 /*---------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
@@ -274,179 +225,118 @@ object-fit: cover;
 /*---------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
-     
+/* RESPONSIVE A 800PX*/     
 
 @media screen and (max-width:800px)
 {
 
-.menu{
-    margin: 10px;
-    width: 75%;
-    float: left;
-    text-align: center;
-}
-.menu  li {
-    padding: 10px;
-    display: block;
-    font-size: 28px;
-    border-bottom: 1px solid #097379;
-    margin: auto;
-    
+body{
+    padding-top: 80px;
 }
 
-/*---SUBMENU ------*/
-
-.menu li:hover > ul{
-    width: 70%;
-    display:block;
-    background-color: #addfd9;
-    border: 1px solid #097379;
-    border-radius: 14px;
-    font-size: 20px;
+.imgHeader{
+    display: none;
+/*height: 80%;
+width: 80%;
+margin: auto;*/
 }
 
-.menu li ul li{
-    display:block;
-    background-color: #addfd9;
-    border-bottom: 1px solid #097379;
-    font-size: 20px;
-}
-
-
-.menu li ul > li a:hover{
- background-color:#dd987b;
- border-radius: 20px;
- color: white;
- font-size: 20px;
-}
-
-/*----SUBMENU SUBMENU ----*/
-
-
-.menu li ul li:hover ul {
-    margin-top: 10px;
-    border-radius: 12px;
-    width: 30%;
-}
-
-
-.menu li ul li:hover ul li {
-    display:block;
-    margin-top: 20px;
-    border-bottom: 1px solid #097379;
-    font-size: 20px;
-    
-}
-
-
-
-/*--------------------------este es el boton---*/
 .menu_bar{
     display: block;
     width: 100%;
-    background-color: #097379;
-    
+    position: fixed;
+    top: 0;
+    background-color: #addfd9;
 }
-
 
 .menu_bar .bt-menu{
-    margin: -2px;
     display: block;
-    padding: 20px;
-    background-color: #097379;
-    text-decoration: none;
-    color: white;
+    padding:20px;
+    color: #097379;
+    overflow: hidden;
+    font-size: 20px;
     font-weight: bold;
-    font-size: 25px;
-    box-sizing: border-box;
+    text-decoration: none;
 }
 
-/*.menu{
+.menu_bar .menu-ham{
+    float: right;
+    width: 50px;
+    height: 50px;
+}
+
+header{
+    overflow:scroll;
+}
+
+header nav{
+    top: 75px;;
+    width: 50%; /*ancho del menu cunado se despliega*/
+    height:calc(90% + 20px);
+    position: fixed;
+    right: 100%;
+    /*left: 0;*/
+    overflow:scroll;
+    margin: 0;
+    background-color: #addfd9;
+}
+
+header nav ul{
     display: block;
-    height: 60px;
-    margin: auto;
-    float:right;
-    padding: 15px;
-    text-align: center;
-    width: 97%;
-    border: 1px solid #00adb5;
+    width: 100%;
+}
+
+
+header nav ul li{
+    display: block;
+    width: 100%;
+}
+
+
+header nav ul li a{
+    display: block;
+    background-color: #addfd9 ;
+    font-size: 20px;
     
 }
 
-.menu li a{
-    margin: auto;
-    font-size: 25px;
-    padding: 5px;
-    justify-content:center;
-    
+header nav ul li .children{
+    width: 100%;
+    position: relative;
 }
 
-/*--- menu desplegable------------------------------------------*/
-/*
-.menu li:hover ul{
-    display:block;
-    float: left;
-    position: absolute;
-    background-color: white;
-    top: 180px;
-  
+header nav ul li .children a{
+    margin-left: 50px;
 }
 
-.menu li ul > li{
-    display:block;
-    background-color: white;
-    margin: 30px;
-    margin-left: -20px;
-    border-bottom: 1px solid #addfd9;
-    
+span{
+    top: 1px;
+    left: -35px;
+    font-size: 30px;
 }
- 
-*/
-.imgHeader{
-display: none;
-}
-    
-/*.imgHeader{
-margin-top: 5px;
-margin-left: 1px;
-height: 100%;
-width: 90%;
-}*/
 
-.footer {
-    
-display:none;   /*flex;*/
-/*justify-content: center;
-position: absolute;
-bottom: 0;
-width: 100%;
-height: 20px;
-color:#00adb5;
-border-top: 1px solid grey;
-text-align: center;
-align-items: center;
-z-index: 9999;
-*/
-
+.imgLogo{
+   display:none;
 }
-     
-        
-        
+
+.name{
+    display: none;
+}
 
 
 /*---- MUESTRO LOS PRODUCTOS -----*/     
 .row{
     margin: 10px 0px 0px 10px;
     width: 83%;
-    height: 150px;
+    height: 160px;
     border: 1px solid rgb(207, 205, 205);
     border-radius: 8px;
     
 }
 
 .row img{
-    height: 150px;
-    width: 150px;
+    height: 125px;
+    width: 125px;
     }
 
 .descripcionProducto{
@@ -476,7 +366,7 @@ z-index: 9999;
     width:60px;
     height:60px;
     right:18px;
-    bottom:160px;
+    bottom:10px;
     }
 /*.btn-correo {
     width:60px;

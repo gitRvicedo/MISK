@@ -1,22 +1,6 @@
-/*console.log('vinculado')
 
-let links = document.querySelectorAll("a")
-let container = document.getElementById("container")
+console.log('vinculado')
 
-$(window).load(function() {
-
-    let pagina = fetch(`html/productos.html`)
-    pagina
-      .then(valor=>{return valor.text()})
-      .then(valor=>{
-        console.log(valor);
-        container.innerHTML = valor;
-    })
-    .catch()
-
-});*/
-
-$(document).ready(function(){
  
   let links = document.querySelectorAll("a");
   let main = document.getElementById("main")  
@@ -24,8 +8,9 @@ $(document).ready(function(){
   
   links.forEach((link)=>{
    
-    link.addEventListener("click",function(){
+    link.addEventListener("click",function(e){
       let id = link.id;
+      console.log(id)
      //`${url}/users`
      
       let url = `html/${id}.html`;
@@ -41,17 +26,17 @@ $(document).ready(function(){
     })
   })
   
-  /*cargo la pagina de inicio */
-  let pagina_inicio = ajax("html/Destacados.html");
-  pagina_inicio.addEventListener("load",()=>{
-       
-    if (pagina_inicio.status == 200)
-              {
-                main.innerHTML = pagina_inicio.response;
-              }
-  })
+/*-----------------------------------------------------------------------------CARGO PAGINA DE INICIO --*/
+let pagina_inicio = ajax("html/Destacados.html");
+pagina_inicio.addEventListener("load",()=>{
+    
+if (pagina_inicio.status == 200)
+          {
+            main.innerHTML = pagina_inicio.response;
+          }
+})
   
-  
+/*-----------------------------------------------------------------------------------------FUNCION AJAX--*/ 
   
 function ajax(url){
     let metodo = "GET";
@@ -61,32 +46,6 @@ function ajax(url){
   
     return xhr;
   }
-
-
-
-});
-
-
-
-    
-   
-
-
-
-
-
-
-   
-    
-    
-
-
-   
-
-
-
-
-
 
 
 

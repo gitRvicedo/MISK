@@ -2,149 +2,132 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/index.css" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script> 
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    
     <title>Misk Baby</title>
 
 </head>
-<body class="grid-container">
+<body>
     
-    <div class="nav">
-       <img class="imgLogo" src="ico/logo2.PNG" alt=""><span><a href="https://www.facebook.com/MiskBabe-107784734696645">Misk Baby</a></span>
-      
+    <header>
+       
         <div class="menu_bar">
-            <a href="" class="bt-menu"> MENU </a>
+           <a href="#" class="bt-menu"><span>Misk Baby</span><img class="menu-ham" src="ico/menu_ham.png" alt=""></a>
         </div>
-
-       <ul class="menu">
-            <li><a href="#" id="lactancia">Lactancia</a>
+        
+        <img class="imgLogo" src="ico/logo2.PNG" alt=""><span><a href="https://www.facebook.com/MiskBabe-107784734696645" class="name">Misk Baby</a></span>
+        
+        <nav>
+                
                 <ul>
-                   <li><a href="">Mamaderas</a></li>
-                   <li><a href="">Sacaleches</a></li>
-                   <li><a href="">Accesorios</a></li>
-                   <li><a href="">Esterilizadores</a></li>
-                   <li><a href="">Protectores mamarios</a></li>
-                   <li><a href="">Tetinas</a></li>
-                </ul>
-            </li>
-            
-            <li><a href="#" id="Marcas">Primeras Comidas</a>
-                <ul>
-                    <li><a href="#" >Platos y cubiertos</a></li>
-                    <li><a href="#" >Vasos</a></li>
-                    <li><a href="#" >Sillas de comer</a></li>
-                    <li><a href="#" >Accesorios</a></li>
-                </ul>
-            </li>    
-
-            <li><a href="#" id="Juvenile">Chupetes</a>
-                <ul>
-                     <li><a href="#" >Blandos</a></li>
-                     <li><a href="#" >Escudo</a></li>
-                     <li><a href="#" >Clips</a></li>
-                </ul>  
-             </li>  
-
-            <li><a href="#" id="Juvenile">Higiene</a>
-               <ul>
-                    <li><a href="#" >Cambio de pañal</a></li>
-                    <li><a href="#" >Higiene bucal</a></li>
-                    <li><a href="#" >Mordillos</a></li>
-                </ul>
-            </li>    
-            
-            <li><a href="#" id="">Paseo</a>
-                <ul>
-                    <li><a href="#" id="">Duos y Tríos</a></li>
-                    <li><a href="#" id="">Ultraliviano</a></li>
-                    <li><a href="#" id="">Accesorios de paseo</a></li>
-                    <li><a href="#" >Butacas de seguridad</a></li>
-                    <li><a href="#" >Accesorios de viaje</a></li>
-
-            <!-- <li><a href="#" id="Physio">Chupetes <img class="flecha" src="./ico/fd2.png"> </a>
-                        <ul>
-                            <li><a href="">Micro</a></li>
-                            <li><a href="">Light</a></li>
-                            <li><a href="">Soft</a></li>
-                            <li><a href="" >Confort</a></li>
-                            <li><a href="" >Air</a></li>
-                    
+                    <li class="submenu"> <!--class="submenu"-->
+                        <a href="#" id="lactancia">Lactancia  </a>
+                        <ul class="children">
+                            <li><a href="#" id="productos">Productos</a></li>
+                            <li><a href="#" id="lactancia">Mamaderas</a></li>
+                            <li><a href="#" id="naturalfeeling">Sacaleches</a></li>
+                            <li><a href="#" id="accesorios">Accesorios</a></li>
+                            <li><a href="#">Esterilizadores</a></li>
+                            <li><a href="#">Protectores mamarios</a></li>
+                            <li><a href="#">Tetinas</a></li>
                         </ul>
-                    </li>-->
-                </ul>
-            </li>  
-            
-            <li><a href="#" id="Juvenile">Relax</a>
-                <ul>
-                     <li><a href="#" >Cunas</a></li>
-                 </ul>  
-             </li>  
+                    </li>
+                    <li class="submenu" >
+                        <a href="#">Primeras Comidas</a>
+                        <ul class="children">
+                            <li><a href="#" >Platos y cubiertos</a></li>
+                            <li><a href="#" >Vasos</a></li>
+                            <li><a href="#" >Sillas de comer</a></li>
+                            <li><a href="#" >Accesorios</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu">
+                        <a href="#">Chupetes</a>
+                        <ul class="children">
+                            <li><a href="#" >Blandos</a></li>
+                            <li><a href="#" >Escudo</a></li>
+                            <li><a href="#" >Clips</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu">
+                        <a href="#">Higiene</a>
+                        <ul class="children">
+                            <li><a href="#" >Cambio de pañal</a></li>
+                            <li><a href="#" >Higiene bucal</a></li>
+                            <li><a href="#" >Mordillos</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu">
+                        <a href="#">Paseo</a>
+                        <ul class="children">
+                            <li><a href="#" id="">Duos y Tríos</a></li>
+                            <li><a href="#" id="">Ultraliviano</a></li>
+                            <li><a href="#" id="">Accesorios de paseo</a></li>
+                            <li><a href="#" >Butacas de seguridad</a></li>
+                            <li><a href="#" >Accesorios de viaje</a></li>
+                        </ul>
+                    </li>
+                   
+                    <li class="submenu">
+                        <a href="#">Juguetes</a>
+                        <ul class="children">
+                            <li><a href="#" >Educativos Bilingües</a></li>
+                            <li><a href="#" >Deportes</a></li>
+                            <li><a href="#" >Autos y camiones</a></li>
+                            <li><a href="#" >Peluches</a></li>
+                            <li><a href="#" >Primeras actividades</a></li>
+                            <li><a href="#" >Juguetes para el baño</a></li>
+                            <li><a href="#" >Juguetes para el paseo</a></li>
+                            <li><a href="#" >Instrumentos musicales</a></li>
+                            <li><a href="#" >Pata Pata</a></li>
+                            <li><a href="#" >Proyectores</a></li>
+                            <li><a href="#" >Móviles de Cuna</a></li>
+                            <li><a href="#" >Encastrables</a></li>
+                            <li><a href="#" >Pistas de Autos</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu">
+                        <a href="#">Bienestar</a>
+                        <ul class="children">
+                            <li><a href="#" >Higiene nasal</a></li>
+                            <li><a href="#" >En casa</a></li>
+                            <li><a href="#" >Repelentes Infanti</a></li>
+                        </ul>
+                    </li>
+                    
+                 </ul>
+        </nav>
+    </header> <!--cierre del header-->
 
-            <li><a href="#" id="Juvenile">Juguetes</a>
-                <ul>
-                    <li><a href="#" >Educativos Bilingües</a></li>
-                    <li><a href="#" >Deportes</a></li>
-                    <li><a href="#" >Autos y camiones</a></li>
-                    <li><a href="#" >Peluches</a></li>
-                    <li><a href="#" >Primeras actividades</a></li>
-                    <li><a href="#" >Juguetes para el baño</a></li>
-                    <li><a href="#" >Juguetes para el paseo</a></li>
-                    <li><a href="#" >Instrumentos musicales</a></li>
-                    <li><a href="#" >Pata Pata</a></li>
-                    <li><a href="#" >Proyectores</a></li>
-                    <li><a href="#" >Móviles de Cuna</a></li>
-                    <li><a href="#" >Encastrables</a></li>
-                    <li><a href="#" >Pistas de Autos</a></li>
-                </ul>
-            </li>    
-            
-            <li><a href="#" id="Juvenile">Bienestar</a>
-                <ul>
-                    <li><a href="#" >Higiene nasal</a></li>
-                    <li><a href="#" >En casa</a></li>
-                    <li><a href="#" >Repelentes Infanti</a></li>
-                </ul>
-            </li>  
-        </ul>
+    
+
+    <div class="content-imgHeader">
+        <img class="imgHeader" src="img/imgHeader/imgHeader7.PNG" />
     </div>
 
-      <!--boton whatsapp flotante --> 
-      <div class="btn-contacto btn-whatsapp">
-        <a href="https://api.whatsapp.com/send?phone=+5491121767860&text=%20Hola%20Queria realizar un pedido!" target="_blank">
-        <img src="ico/btn_whatsapp.png" width="70" height="70" alt="">
-        </a>
-    </div> 
-     <!--boton whatsapp flotante --> 
-     <!--<div class="btn-contacto btn-correo">
-        <a href="" target="_blank">
-        <img src="ico/btn_email.png"  width="60" height="60" alt="">
-        </a>
-    </div> -->
-    <!--boton whatsapp flotante --> 
-    <div class="btn-contacto btn-facebook">
-        <a href="https://www.facebook.com/MiskBabe-107784734696645" target="_blank">
-        <img src="ico/btn_facebook.png" width="60" height="60" alt="">
-        </a>
-    </div> 
     
-   <img class="imgHeader" src="img/imgHeader/imgHeader7.PNG" />
-    
+
     <div id="main">
     <!-- ACA INYECTO DATOS NO BORRAR -->
     </div>
         
-      
+     <!--boton whatsapp flotante --> 
+     <div class="btn-contacto btn-whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=+5491121767860&text=%20Hola%20Queria realizar un pedido!" target="_blank">
+        <img src="ico/btn_whatsapp.png" width="70" height="70" alt="">
+        </a>
+    </div> 
+    
    <div class="footer">
         <div>Copyright © 2000-2021 - Todos los derechos reservados</div>
     </div>
-   
-    <script src="js/index.js"></script>
-    <script src="js/menu.js"></script> 
+
+    <script src="js/menu.js"></script>
+    <script src="js/index.js"></script> 
+
 </body>
 </html>
