@@ -261,8 +261,8 @@ margin: auto;*/
 
 .menu_bar .menu-ham{
     float: right;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
 }
 
 header{
@@ -270,9 +270,9 @@ header{
 }
 
 header nav{
-    top: 75px;;
-    width: 50%; /*ancho del menu cunado se despliega*/
-    height:calc(90% + 20px);
+    top: 70px;
+    width: 60%; /*ancho del menu cunado se despliega*/
+    height:calc(90% + 50px);
     position: fixed;
     right: 100%;
     /*left: 0;*/
@@ -296,7 +296,7 @@ header nav ul li{
 header nav ul li a{
     display: block;
     background-color: #addfd9 ;
-    font-size: 20px;
+    font-size: 12px;
     
 }
 
@@ -306,7 +306,7 @@ header nav ul li .children{
 }
 
 header nav ul li .children a{
-    margin-left: 50px;
+    margin-left: 60px;
 }
 
 span{
@@ -327,7 +327,7 @@ span{
 /*---- MUESTRO LOS PRODUCTOS -----*/     
 .row{
     margin: 10px 0px 0px 10px;
-    width: 83%;
+    width: 96%;
     height: 160px;
     border: 1px solid rgb(207, 205, 205);
     border-radius: 8px;
@@ -344,11 +344,11 @@ span{
     margin-left: 20px;
     display: inline;
     width: 100%;
-    font-size: 15px;
+    font-size: 13px;
 }
     
 .precio{
-    font-size: 25px;
+    font-size: 20px;
     width: 20px;
 }
 
